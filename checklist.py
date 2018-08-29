@@ -1,6 +1,4 @@
 checklist = list()
-passed = 0
-failed = 0
 
 
 def create(item):
@@ -54,7 +52,7 @@ def select(function_code):
         input_item = user_input("Input item: ")
         if input_item:
             create(input_item)
-            
+
             new_item = True
             print("(Leave blank to confirm.)")
             while new_item:
@@ -110,6 +108,9 @@ while running:
 
 
 # TESTS ---------------------------------------------
+
+passed = 0
+failed = 0
 
 
 def check_test(res, exp, msg):
